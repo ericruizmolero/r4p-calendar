@@ -27,7 +27,6 @@ window.Webflow.push(() => {
 
 const getEvents = (): Event[] => {
   const scripts = document.querySelectorAll<HTMLScriptElement>('[data-element="event-data"]');
-  console.log({ scripts });
 
   const events = [...scripts].map((script) => {
     const event: Event = JSON.parse(script.textContent!);
