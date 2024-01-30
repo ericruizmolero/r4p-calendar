@@ -8,6 +8,18 @@ dependencies:
   '@finsweet/ts-utils':
     specifier: ^0.40.0
     version: 0.40.0
+  '@fullcalendar/core':
+    specifier: ^6.1.10
+    version: 6.1.10
+  '@fullcalendar/daygrid':
+    specifier: ^6.1.10
+    version: 6.1.10(@fullcalendar/core@6.1.10)
+  '@fullcalendar/list':
+    specifier: ^6.1.10
+    version: 6.1.10(@fullcalendar/core@6.1.10)
+  '@fullcalendar/timegrid':
+    specifier: ^6.1.10
+    version: 6.1.10(@fullcalendar/core@6.1.10)
 
 devDependencies:
   '@changesets/changelog-git':
@@ -544,6 +556,37 @@ packages:
     dependencies:
       typescript: 5.2.2
     dev: true
+
+  /@fullcalendar/core@6.1.10:
+    resolution: {integrity: sha512-oTXGJSAGpCf1oY+CKp5qYjMHkJCPBkJ3SHitl63n8Q6xKeiwQ4EF6Au451euUovREwJpLmD1AyZrCnWmtB9AVg==}
+    dependencies:
+      preact: 10.12.1
+    dev: false
+
+  /@fullcalendar/daygrid@6.1.10(@fullcalendar/core@6.1.10):
+    resolution: {integrity: sha512-Z4GRm1IyHKgxXFTWGcEI0nTsvYOIkpE0aMt3/o3ER2SZkF+hfwcDFhtj0c9+WhMjXFIWYeoTnA9rUOY7Zl/nxA==}
+    peerDependencies:
+      '@fullcalendar/core': ~6.1.10
+    dependencies:
+      '@fullcalendar/core': 6.1.10
+    dev: false
+
+  /@fullcalendar/list@6.1.10(@fullcalendar/core@6.1.10):
+    resolution: {integrity: sha512-WE4vuSUCzol4tJd0ZP0cNxeyRPaZcsVVYs2I3qdf3OZQkXwDCdSyWEz0Hluf+XZWcZXt21aEYKlxRjwUpQcf4Q==}
+    peerDependencies:
+      '@fullcalendar/core': ~6.1.10
+    dependencies:
+      '@fullcalendar/core': 6.1.10
+    dev: false
+
+  /@fullcalendar/timegrid@6.1.10(@fullcalendar/core@6.1.10):
+    resolution: {integrity: sha512-hFKyQXJaPbNyq1reZmvkCmM64O99krHoIcJAbDS+dntCm3FzZUcDtAcRKIbMiantHrezCG/1MEYk3m9e3aKvIQ==}
+    peerDependencies:
+      '@fullcalendar/core': ~6.1.10
+    dependencies:
+      '@fullcalendar/core': 6.1.10
+      '@fullcalendar/daygrid': 6.1.10(@fullcalendar/core@6.1.10)
+    dev: false
 
   /@humanwhocodes/config-array@0.11.13:
     resolution: {integrity: sha512-JSBDMiDKSzQVngfRjOdFXgFfklaXI4K9nLF49Auh21lmBWRLIK3+xTErTWD4KU54pb6coM6ESE7Awz/FNU3zgQ==}
@@ -2458,6 +2501,10 @@ packages:
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
+
+  /preact@10.12.1:
+    resolution: {integrity: sha512-l8386ixSsBdbreOAkqtrwqHwdvR35ID8c3rKPa8lCWuO86dBi32QWHV4vfsZK1utLLFMvw+Z5Ad4XLkZzchscg==}
+    dev: false
 
   /preferred-pm@3.1.2:
     resolution: {integrity: sha512-nk7dKrcW8hfCZ4H6klWcdRknBOXWzNQByJ0oJyX97BOupsYD+FzLS4hflgEu/uPUEHZCuRfMxzCBsuWd7OzT8Q==}
