@@ -1,4 +1,5 @@
 import { Calendar } from '@fullcalendar/core';
+import esLocale from '@fullcalendar/core/locales/es';
 import dayGridPlugin from '@fullcalendar/daygrid';
 import listPlugin from '@fullcalendar/list';
 import timeGridPlugin from '@fullcalendar/timegrid';
@@ -14,6 +15,7 @@ window.Webflow.push(() => {
   const calendar = new Calendar(calendarElement, {
     plugins: [dayGridPlugin, timeGridPlugin, listPlugin],
     initialView: 'dayGridMonth',
+    locale: esLocale,
     headerToolbar: {
       left: 'prev,next today',
       center: 'title',

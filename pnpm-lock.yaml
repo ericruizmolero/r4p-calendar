@@ -20,6 +20,9 @@ dependencies:
   '@fullcalendar/timegrid':
     specifier: ^6.1.10
     version: 6.1.10(@fullcalendar/core@6.1.10)
+  es:
+    specifier: link:@fullcalendar/core/locales/es
+    version: link:@fullcalendar/core/locales/es
 
 devDependencies:
   '@changesets/changelog-git':

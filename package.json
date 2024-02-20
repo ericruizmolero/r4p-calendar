@@ -56,7 +56,8 @@
     "@fullcalendar/core": "^6.1.10",
     "@fullcalendar/daygrid": "^6.1.10",
     "@fullcalendar/list": "^6.1.10",
-    "@fullcalendar/timegrid": "^6.1.10"
+    "@fullcalendar/timegrid": "^6.1.10",
+    "es": "link:@fullcalendar/core/locales/es"
   },
   "engines": {
     "pnpm": ">=8"
