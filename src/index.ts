@@ -13,9 +13,9 @@ window.Webflow.push(() => {
   console.log({ events });
 
   const calendar = new Calendar(calendarElement, {
-    plugins: [dayGridPlugin, timeGridPlugin, listPlugin],
+    plugins: [dayGridPlugin],
     initialView: 'dayGridMonth',
-    // locale: esLocale,
+    //locale: esLocale,
     headerToolbar: {
       left: 'prev,next today',
       center: 'title',
