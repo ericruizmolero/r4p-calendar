@@ -19,7 +19,7 @@ window.Webflow.push(() => {
     headerToolbar: {
       left: 'prev,next today',
       center: 'title',
-      right: 'dayGridMonth,timeGridWeek,listWeek',
+      right: 'dayGridMonth',
     },
     events,
     dayCellClassNames: function (dateInfo) {
